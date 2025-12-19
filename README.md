@@ -1,100 +1,97 @@
-# 🔍 Elsakr Port Scanner & Killer
+# 🦅 Elsakr Port Scanner & Killer
 
-<p align="center">
-  <img src="assets/Sakr-logo.png" alt="Elsakr Logo" width="120">
-</p>
+<div align="center">
+  <a href="https://elsakr.company">
+    <img src="https://elsakr.company/Sakr-logo.webp" alt="Elsakr Logo" width="200">
+  </a>
+</div>
 
-<p align="center">
-  <strong>Scan ports and kill processes using them</strong>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python">
-  <img src="https://img.shields.io/badge/Platform-Windows-green?style=flat-square&logo=windows">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square">
-</p>
+> **Part of Elsakr Open Source Tools Ecosystem — [View All Tools](https://elsakr.company/tools)**  
+> *"Port 3000 is already in use" — annoying, right? End that forever.*
 
 ---
+
+## ⭐ Badges
+![Stars](https://img.shields.io/github/stars/khalidsakrjoker/Elsakr-Port-Scanner?style=social)
+![License](https://img.shields.io/github/license/khalidsakrjoker/Elsakr-Port-Scanner?style=flat-square&color=blue)
+![Language](https://img.shields.io/badge/Language-Python-yellow?style=flat-square)
+![Downloads](https://img.shields.io/github/downloads/khalidsakrjoker/Elsakr-Port-Scanner/total?style=flat-square&color=green)
+
+## 📋 Table of Contents
+- [🦅 Elsakr Port Scanner & Killer](#-elsakr-port-scanner--killer)
+  - [⭐ Badges](#-badges)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [🧐 What is it?](#-what-is-it)
+  - [✨ Features](#-features)
+  - [📦 Usage](#-usage)
+  - [🤝 Contributing](#-contributing)
+  - [📜 License](#-license)
+  - [📞 Contact](#-contact)
+  - [🇪🇬 Arabic Version / النسخة العربية](#-arabic-version--النسخة-العربية)
+
+---
+
+## 🧐 What is it?
+**Elsakr Port Scanner & Killer** is a developer's best friend. It quickly scans for open ports on your machine (or a target IP) and identifies which process is holding a specific port. With one click, you can terminate that process. No more "EADDRINUSE" errors blocking your deployment.
 
 ## ✨ Features
+- **Range Scanning**: Scan single ports or a range (e.g., 3000-4000).
+- **Process ID**: Shows exactly WHICH program is using the port.
+- **Kill Switch**: Free up the port instantly.
+- **Process Listener**: View all active connections.
 
-### 🔍 Port Scanner
-- Scan any port range (1-65535)
-- Multi-threaded for speed (100 threads)
-- Quick scan for common ports
-- Shows service name and process info
-- Real-time progress tracking
+## 📦 Usage
+![App Screenshot](./assets/Screenshot.png)
 
-### ☠️ Port Killer
-- Kill any process by port number
-- Quick kill buttons for dev ports (3000, 5000, 8000, etc.)
-- Process name and PID display
-- Confirmation before killing
-
-### 📊 Listening Ports
-- View all listening ports on your machine
-- See process name, PID, and service
-- Double-click to kill process
+1. **Scan**: Run a scan on localhost (or a range).
+2. **identify**: See the PID and Process Name holding the port.
+3. **Kill**: Select the port and click "Kill Process".
+4. **Deploy**: Run your server freely.
 
 ---
 
-## 📸 Screenshot
+## 🤝 Contributing
+Developer tools made by developers, for developers. PRs are welcome!
 
-<p align="center">
-  <img src="assets/Screenshot.png" alt="App Screenshot" width="800">
-</p>
+## 📜 License
+Distributed under the MIT License. See `LICENSE` for more information.
 
----
-
-## 🚀 Quick Start
-
-### Run from Source
-
-```bash
-# Clone the repository
-git clone https://github.com/khalidsakrjoker/elsakr-port-scanner.git
-cd elsakr-port-scanner
-
-# Create virtual environment
-python -m venv venv
-.\venv\Scripts\Activate  # Windows
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the app
-python main.py
-```
-
-### Download EXE
-
-Download from [Releases](https://github.com/khalidsakrjoker/elsakr-port-scanner/releases).
+## 📞 Contact
+**Elsakr Tools** - [elsakr.company](https://elsakr.company)  
+*Open Source Tools with a Falcon’s Vision.*
 
 ---
 
-## 🛠️ Build Executable
+# 🇪🇬 Arabic Version / النسخة العربية
 
-```bash
-pip install pyinstaller
+# 🦅 Elsakr Port Scanner & Killer (فاحص وقاتل البورتات)
 
-pyinstaller --noconsole --onefile --icon="assets/fav.ico" --name="Elsakr Port Scanner" --add-data "assets;assets" main.py
-```
+<div align="center">
+  <a href="https://elsakr.company">
+    <img src="https://elsakr.company/Sakr-logo.webp" alt="Elsakr Logo" width="200">
+  </a>
+</div>
 
----
-
-## ⚠️ Note
-
-- **Run as Administrator** for full functionality (killing system processes)
-- This tool uses Windows-specific commands (netstat, taskkill)
+> **جزء من نظام صقر للأدوات مفتوحة المصدر — [عرض كل الأدوات](https://elsakr.company/tools)**  
+> *"Port 3000 is already in use" — رسالة مستفزة، صح؟ انهيها للأبد.*
 
 ---
 
-## 📄 License
+## 🧐 ما هي هذه الأداة؟
+صديقة المطورين الأولى. بتفحص البورتات المفتوحة على جهازك بسرعة، وبتعرفك مين البرنامج (Process) اللي حاجز البورت ده. وبضغطة واحدة، تقدر تقفل البرنامج ده وتحرر البورت. وداعاً لأخطاء "EADDRINUSE" اللي بتوقف شغلك.
 
-MIT License - [Elsakr Software](https://elsakr.company)
+## ✨ المميزات
+- **فحص نطاق**: افحص بورت واحد أو مجموعة (مثلاً 3000-4000).
+- **كشف هوية**: اعرف اسم البرنامج والـ PID اللي حاجز البورت.
+- **زر الإنهاء**: حرر البورت فوراً.
+- **مراقب العمليات**: شوف كل الاتصالات النشطة.
 
----
+## 📦 طريقة الاستخدام
+1. **افحص**: شغل الفحص على Localhost.
+2. **حدد**: شوف الـ PID والاسم بتاع العملية.
+3. **اقفل**: حدد البورت واضغط "Kill Process".
+4. **شغل**: شغل سيرفرك براحتك.
 
-<p align="center">
-  Made with ❤️ by <a href="https://elsakr.company">Elsakr</a>
-</p>
+## 📞 تواصل معنا
+**أدوات صقر** - [elsakr.company](https://elsakr.company)  
+*أدوات مفتوحة المصدر برؤية صقر.*
